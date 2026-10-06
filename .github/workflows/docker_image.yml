@@ -43,7 +43,7 @@ jobs:
     with:
       output: image
       push: ${{ github.event_name != 'pull_request' }}
-      platforms: linux/amd64,linux/arm64
+      platforms: linux/amd64,linux/arm64, linux/arm/v7
       # Needed for using .git folder in Dockerfile 
       # https://docs.docker.com/build/concepts/context/#keep-git-directory
       build-args: |
